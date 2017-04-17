@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>后台管理系统</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 50px;
+		}
+		.side_bar {
+			padding-top: 10px;
+			background-color: #ccc;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<!-- nav -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+		<div class="container">
+			<div class="navbar-header">
+            <!-- 当屏幕宽度小于某个值时响应式布局，显示三横图标 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 商标或logo -->
+            <a class="navbar-brand" href="#">后台管理系统logo</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="divider"></li>
+                        <li><a href="#feature-tab" data-tab="tab-chrome">商品1</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">商品2</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">商品3</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">分类<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="divider"></li>
+                        <li><a href="#feature-tab" data-tab="tab-chrome">分类1</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">分类2</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">分类3</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">功能<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="divider"></li>
+                        <li><a href="#feature-tab" data-tab="tab-chrome">功能1</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">功能2</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">功能3</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </li>
+                <li><a href="#" >用户</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">	            
+	            <button type="submit" class="btn btn-default">登录</button>
+            </form>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>            
+        </div>
+		</div>
+	</div>
+	<!-- nav end -->
+	<!-- side_bar -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 side_bar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="#">首页</a></li>
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li><a href="#">信息建立</a></li>
+					<li><a href="#">信息查询</a></li>
+					<li><a href="#">信息管理</a></li>
+					<li><a href="#">信息管理</a></li>
+					<li><a href="#">信息管理</a></li>
+					<li><a href="#">信息管理</a></li>
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li class="divider"></li>
+					<li><a href="#">设置</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+			</div>
+
+
+	<!-- side_bar end -->
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1 class="page-header">控制台</h1>
+
+<p>
+	<button type="button" class="btn btn-lg btn-default">²Ù×÷1</button>
+	<button type="button" class="btn btn-lg btn-primary">²Ù×÷2</button>
+	<button type="button" class="btn btn-lg btn-success">²Ù×÷3</button>
+	<button type="button" class="btn btn-lg btn-info">²Ù×÷4</button>
+	<button type="button" class="btn btn-lg btn-warning">²Ù×÷5</button>
+	<button type="button" class="btn btn-lg btn-danger">²Ù×÷6</button>
+</p>
+<div class="row">
+<div class="col-md-6">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">×îÐÂÌáÐÑ</h3>
+</div>
+<div class="panel-body">
+<div class="alert alert-success" role="alert">
+<strong>ÌáÊ¾</strong>ÄúµÄ¶©µ¥£¨2014001£©ÒÑ¾­ÉóÅúÍ¨¹ý£¡
+</div>
+<div class="alert alert-danger" role="alert">
+<strong>ÌáÊ¾</strong>ÄúµÄ¶©µ¥£¨2014002£©±»´ò»Ø£¡
+</div>
+<div class="alert alert-warning" role="alert">
+<strong>ÌáÊ¾</strong>ÄúµÄ¶©µ¥£¨2013001£©¿Í»§¸¶¿îÑÓ³Ù£¡
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">ÎÒµÄÈÎÎñ</h3>
+</div>
+<div class="panel-body">
+<ul class="nav nav-pills nav-stacked" role="tablist">
+<li role="presentation">
+<a href="#" class="alert alert-info">
+<span class="badge pull-right">42</span>
+¶©µ¥ÉóÅú
+</a>
+</li>
+<li role="presentation">
+<a href="#" class="alert alert-info">
+<span class="badge pull-right">20</span>
+ÊÕ¿îÈ·ÈÏ
+</a>
+</li>
+<li role="presentation">
+<a href="#" class="alert alert-info">
+<span class="badge pull-right">10</span>
+¸¶¿îÈ·ÈÏ
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">×îÐÂ¶©µ¥</h3>
+</div>
+<div class="panel-body">
+<table class="table table-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>²úÆ·</th>
+<th>ÊýÁ¿</th>
+<th>×Ü½ð¶î</th>
+<th>ÒµÎñÔ±</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Apple Macbook air</td>
+<td>10</td>
+<td>80000</td>
+<td>ÍõÐ¡¼ú</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Apple iPad air</td>
+<td>20</td>
+<td>65000</td>
+<td>Òü¿ª»¨</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Apple Macbook pro</td>
+<td>5</td>
+<td>50000</td>
+<td>ÁõÀÏ¸ù</td>
+</tr>
+</tbody>
+</table>
+<p><a class="btn btn-primary" href="#" role="button">²é¿´ÏêÏ¸&raquo;</a></p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">¹¤³Ì½ø¶È</h3>
+</div>
+<div class="panel-body">
+<h3><span class="label label-primary">Ë®¾®ÍÚ¾ò¹¤³Ì</span></h3>
+
+<div class="progress">
+<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">80% Complete</span>
+</div>
+</div>
+<h3><span class="label label-danger">»ù½¨¹¤³Ì</span></h3>
+
+<div class="progress">
+<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30"
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">30% Complete (danger)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+		</div>
+	</div>	
+</body>
+</html>
